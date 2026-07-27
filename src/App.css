@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Rubik", sans-serif;
+  --color-primary: oklch(55.2% 0.016 285.938);
+  --animate-slide: slide 0.4s both;
+
+  @keyframes slide {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    margin: 1.25rem;
+    line-height: 1.57rem;
+  }
+}
